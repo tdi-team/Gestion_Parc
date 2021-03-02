@@ -124,12 +124,12 @@
             this.ButtonMaintenance.BackColor = System.Drawing.Color.Transparent;
             this.ButtonMaintenance.BorderRadius = 8;
             this.ButtonMaintenance.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.ButtonMaintenance.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonMaintenance.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(226)))), ((int)(((byte)(141)))));
             this.ButtonMaintenance.CheckedState.Parent = this.ButtonMaintenance;
             this.ButtonMaintenance.CustomImages.Parent = this.ButtonMaintenance;
             this.ButtonMaintenance.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonMaintenance.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.ButtonMaintenance.ForeColor = System.Drawing.Color.White;
+            this.ButtonMaintenance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonMaintenance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.ButtonMaintenance.HoverState.Parent = this.ButtonMaintenance;
             this.ButtonMaintenance.Image = global::Gestion_parc.Properties.Resources.tools_Standard;
             this.ButtonMaintenance.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -142,6 +142,7 @@
             this.ButtonMaintenance.TabIndex = 5;
             this.ButtonMaintenance.Text = "Maintenance";
             this.ButtonMaintenance.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonMaintenance.Click += new System.EventHandler(this.ButtonMaintenance_Click);
             // 
             // ButtonCarburants
             // 
@@ -149,12 +150,12 @@
             this.ButtonCarburants.BackColor = System.Drawing.Color.Transparent;
             this.ButtonCarburants.BorderRadius = 8;
             this.ButtonCarburants.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.ButtonCarburants.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonCarburants.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(226)))), ((int)(((byte)(141)))));
             this.ButtonCarburants.CheckedState.Parent = this.ButtonCarburants;
             this.ButtonCarburants.CustomImages.Parent = this.ButtonCarburants;
             this.ButtonCarburants.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonCarburants.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.ButtonCarburants.ForeColor = System.Drawing.Color.White;
+            this.ButtonCarburants.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonCarburants.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.ButtonCarburants.HoverState.Parent = this.ButtonCarburants;
             this.ButtonCarburants.Image = global::Gestion_parc.Properties.Resources.gas_Standard;
             this.ButtonCarburants.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -167,6 +168,7 @@
             this.ButtonCarburants.TabIndex = 4;
             this.ButtonCarburants.Text = "Carburants";
             this.ButtonCarburants.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonCarburants.Click += new System.EventHandler(this.ButtonCarburants_Click);
             // 
             // ButtonMissions
             // 
@@ -174,12 +176,12 @@
             this.ButtonMissions.BackColor = System.Drawing.Color.Transparent;
             this.ButtonMissions.BorderRadius = 8;
             this.ButtonMissions.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.ButtonMissions.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonMissions.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(226)))), ((int)(((byte)(141)))));
             this.ButtonMissions.CheckedState.Parent = this.ButtonMissions;
             this.ButtonMissions.CustomImages.Parent = this.ButtonMissions;
             this.ButtonMissions.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonMissions.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.ButtonMissions.ForeColor = System.Drawing.Color.White;
+            this.ButtonMissions.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonMissions.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.ButtonMissions.HoverState.Parent = this.ButtonMissions;
             this.ButtonMissions.Image = global::Gestion_parc.Properties.Resources.mission_Standard;
             this.ButtonMissions.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -192,6 +194,7 @@
             this.ButtonMissions.TabIndex = 3;
             this.ButtonMissions.Text = "Missions";
             this.ButtonMissions.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonMissions.Click += new System.EventHandler(this.ButtonMissions_Click);
             // 
             // ButtonFonctionnaires
             // 
@@ -199,12 +202,12 @@
             this.ButtonFonctionnaires.BackColor = System.Drawing.Color.Transparent;
             this.ButtonFonctionnaires.BorderRadius = 8;
             this.ButtonFonctionnaires.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.ButtonFonctionnaires.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonFonctionnaires.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(226)))), ((int)(((byte)(141)))));
             this.ButtonFonctionnaires.CheckedState.Parent = this.ButtonFonctionnaires;
             this.ButtonFonctionnaires.CustomImages.Parent = this.ButtonFonctionnaires;
             this.ButtonFonctionnaires.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonFonctionnaires.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.ButtonFonctionnaires.ForeColor = System.Drawing.Color.White;
+            this.ButtonFonctionnaires.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonFonctionnaires.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.ButtonFonctionnaires.HoverState.Parent = this.ButtonFonctionnaires;
             this.ButtonFonctionnaires.Image = global::Gestion_parc.Properties.Resources.employee_Standard;
             this.ButtonFonctionnaires.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -217,6 +220,7 @@
             this.ButtonFonctionnaires.TabIndex = 2;
             this.ButtonFonctionnaires.Text = "Fonctionnaires";
             this.ButtonFonctionnaires.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonFonctionnaires.Click += new System.EventHandler(this.ButtonFonctionnaires_Click);
             // 
             // ButtonVehicule
             // 
@@ -224,12 +228,12 @@
             this.ButtonVehicule.BackColor = System.Drawing.Color.Transparent;
             this.ButtonVehicule.BorderRadius = 8;
             this.ButtonVehicule.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.ButtonVehicule.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonVehicule.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(226)))), ((int)(((byte)(141)))));
             this.ButtonVehicule.CheckedState.Parent = this.ButtonVehicule;
             this.ButtonVehicule.CustomImages.Parent = this.ButtonVehicule;
             this.ButtonVehicule.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonVehicule.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.ButtonVehicule.ForeColor = System.Drawing.Color.White;
+            this.ButtonVehicule.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonVehicule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.ButtonVehicule.HoverState.Parent = this.ButtonVehicule;
             this.ButtonVehicule.Image = global::Gestion_parc.Properties.Resources.car_Standard;
             this.ButtonVehicule.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -250,12 +254,12 @@
             this.ButtonHome.BackColor = System.Drawing.Color.Transparent;
             this.ButtonHome.BorderRadius = 8;
             this.ButtonHome.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.ButtonHome.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(74)))), ((int)(((byte)(119)))));
+            this.ButtonHome.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(226)))), ((int)(((byte)(141)))));
             this.ButtonHome.CheckedState.Parent = this.ButtonHome;
             this.ButtonHome.CustomImages.Parent = this.ButtonHome;
             this.ButtonHome.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonHome.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.ButtonHome.ForeColor = System.Drawing.Color.White;
+            this.ButtonHome.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(75)))), ((int)(((byte)(84)))));
             this.ButtonHome.HoverState.Parent = this.ButtonHome;
             this.ButtonHome.Image = global::Gestion_parc.Properties.Resources.home_Standard;
             this.ButtonHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -268,6 +272,7 @@
             this.ButtonHome.TabIndex = 0;
             this.ButtonHome.Text = "Home";
             this.ButtonHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
             // 
             // PanelContent
             // 

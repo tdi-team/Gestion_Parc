@@ -14,6 +14,7 @@ namespace Gestion_parc
     public partial class FormMain : Form
     {
         Themes MyTheme = new Themes();
+        string currentForm = "";
         public FormMain()
         {
             InitializeComponent();
@@ -23,18 +24,22 @@ namespace Gestion_parc
             MyTheme.SelectedTheme = T;
             PanelMenu.FillColor = MyTheme.Primary1;
         }
+        private void LoadForm(Form form)
+        {
+            if (form.Name != currentForm)
+            {
+                PanelContent.Controls.Clear();
+                form.TopLevel = false;
+                form.Dock = DockStyle.Fill;
+                PanelContent.Controls.Add(form);
+                labelTitle.Hide();
+                form.Show();
+                currentForm = form.Name;
+            }
+        }
         private void ButtonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-        private void LoadForm(Form form)
-        {
-            PanelContent.Controls.Clear();
-            form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            PanelContent.Controls.Add(form);
-            labelTitle.Hide();
-            form.Show();
         }
         private void ButtonMaximize_Click(object sender, EventArgs e)
         {
@@ -59,7 +64,30 @@ namespace Gestion_parc
         {
             LoadForm(new FormVehicules());
         }
+        private void ButtonHome_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void ButtonFonctionnaires_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonMissions_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonCarburants_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ButtonMaintenance_Click(object sender, EventArgs e)
+        {
+
+        }
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             ApplyTheme(Themes.ColorTheme.Standard);
