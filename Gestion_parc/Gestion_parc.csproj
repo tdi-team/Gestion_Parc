@@ -105,56 +105,54 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <None Include="Resources\shrink.png" />
+    <None Include="Resources\car_Standard.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\car.png" />
+    <None Include="Resources\close_Standard.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\close.png" />
+    <None Include="Resources\employee_Standard.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\employee.png" />
+    <None Include="Resources\gas_Standard.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\enter.png" />
+    <None Include="Resources\home_Standard.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\gas.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\home.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\maximize.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\minimize.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\mission.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\tools.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user_a.png" />
+    <None Include="Resources\logout_Standard.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\man.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\settings.png" />
+    <None Include="Resources\maximize_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mission_Standard.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pdf.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shrink_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tools_Standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\xls.png" />

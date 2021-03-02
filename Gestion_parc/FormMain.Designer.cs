@@ -29,169 +29,194 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ButtonDisconnect = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonMaintenance = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonCarburants = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonMissions = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonFonctionnaires = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonVehicule = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonHome = new Guna.UI2.WinForms.Guna2Button();
             this.PanelContent = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.labelUser = new System.Windows.Forms.Label();
             this.ButtonMinimize = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonMaximize = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonClose = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.ButtonClose = new Guna.UI2.WinForms.Guna2Button();
+            this.PictureBoxUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.PanelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxUser)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Panel1
+            // PanelMenu
             // 
-            this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.PanelMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.guna2Panel1.BorderRadius = 10;
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox1);
-            this.guna2Panel1.Controls.Add(this.guna2Button1);
-            this.guna2Panel1.Controls.Add(this.guna2Button7);
-            this.guna2Panel1.Controls.Add(this.guna2Button6);
-            this.guna2Panel1.Controls.Add(this.guna2Button5);
-            this.guna2Panel1.Controls.Add(this.guna2Button4);
-            this.guna2Panel1.Controls.Add(this.ButtonVehicule);
-            this.guna2Panel1.Controls.Add(this.ButtonHome);
-            this.guna2Panel1.CustomizableEdges.BottomLeft = false;
-            this.guna2Panel1.CustomizableEdges.TopLeft = false;
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(73)))), ((int)(((byte)(13)))));
-            this.guna2Panel1.Location = new System.Drawing.Point(-1, -1);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(191, 601);
-            this.guna2Panel1.TabIndex = 0;
+            this.PanelMenu.BorderRadius = 10;
+            this.PanelMenu.Controls.Add(this.guna2ComboBox1);
+            this.PanelMenu.Controls.Add(this.ButtonDisconnect);
+            this.PanelMenu.Controls.Add(this.ButtonMaintenance);
+            this.PanelMenu.Controls.Add(this.ButtonCarburants);
+            this.PanelMenu.Controls.Add(this.ButtonMissions);
+            this.PanelMenu.Controls.Add(this.ButtonFonctionnaires);
+            this.PanelMenu.Controls.Add(this.ButtonVehicule);
+            this.PanelMenu.Controls.Add(this.ButtonHome);
+            this.PanelMenu.CustomizableEdges.BottomLeft = false;
+            this.PanelMenu.CustomizableEdges.TopLeft = false;
+            this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(153)))), ((int)(((byte)(0)))));
+            this.PanelMenu.Location = new System.Drawing.Point(-1, -1);
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(0);
+            this.PanelMenu.Name = "PanelMenu";
+            this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
+            this.PanelMenu.Size = new System.Drawing.Size(191, 601);
+            this.PanelMenu.TabIndex = 0;
             // 
-            // guna2Button1
+            // guna2ComboBox1
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = global::Gestion_parc.Properties.Resources.enter;
-            this.guna2Button1.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button1.Location = new System.Drawing.Point(13, 552);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(40, 40);
-            this.guna2Button1.TabIndex = 6;
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Items.AddRange(new object[] {
+            "Standard",
+            "Second",
+            "Third",
+            "Light",
+            "Dark"});
+            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(25, 474);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
+            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
+            this.guna2ComboBox1.TabIndex = 14;
+            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
-            // guna2Button7
+            // ButtonDisconnect
             // 
-            this.guna2Button7.Animated = true;
-            this.guna2Button7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button7.BorderRadius = 8;
-            this.guna2Button7.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button7.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
-            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
-            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
-            this.guna2Button7.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
-            this.guna2Button7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button7.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button7.Location = new System.Drawing.Point(0, 365);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(191, 55);
-            this.guna2Button7.TabIndex = 5;
-            this.guna2Button7.Text = "Maintenance";
-            this.guna2Button7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonDisconnect.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonDisconnect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonDisconnect.BorderRadius = 5;
+            this.ButtonDisconnect.CheckedState.Parent = this.ButtonDisconnect;
+            this.ButtonDisconnect.CustomImages.Parent = this.ButtonDisconnect;
+            this.ButtonDisconnect.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonDisconnect.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ButtonDisconnect.ForeColor = System.Drawing.Color.White;
+            this.ButtonDisconnect.HoverState.Parent = this.ButtonDisconnect;
+            this.ButtonDisconnect.Image = global::Gestion_parc.Properties.Resources.logout_Standard;
+            this.ButtonDisconnect.ImageSize = new System.Drawing.Size(35, 35);
+            this.ButtonDisconnect.Location = new System.Drawing.Point(13, 552);
+            this.ButtonDisconnect.Name = "ButtonDisconnect";
+            this.ButtonDisconnect.ShadowDecoration.Parent = this.ButtonDisconnect;
+            this.ButtonDisconnect.Size = new System.Drawing.Size(40, 40);
+            this.ButtonDisconnect.TabIndex = 6;
             // 
-            // guna2Button6
+            // ButtonMaintenance
             // 
-            this.guna2Button6.Animated = true;
-            this.guna2Button6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.BorderRadius = 8;
-            this.guna2Button6.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
-            this.guna2Button6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button6.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button6.Location = new System.Drawing.Point(0, 292);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(191, 55);
-            this.guna2Button6.TabIndex = 4;
-            this.guna2Button6.Text = "Carburants";
-            this.guna2Button6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonMaintenance.Animated = true;
+            this.ButtonMaintenance.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonMaintenance.BorderRadius = 8;
+            this.ButtonMaintenance.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.ButtonMaintenance.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonMaintenance.CheckedState.Parent = this.ButtonMaintenance;
+            this.ButtonMaintenance.CustomImages.Parent = this.ButtonMaintenance;
+            this.ButtonMaintenance.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonMaintenance.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ButtonMaintenance.ForeColor = System.Drawing.Color.White;
+            this.ButtonMaintenance.HoverState.Parent = this.ButtonMaintenance;
+            this.ButtonMaintenance.Image = global::Gestion_parc.Properties.Resources.tools_Standard;
+            this.ButtonMaintenance.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonMaintenance.ImageSize = new System.Drawing.Size(50, 50);
+            this.ButtonMaintenance.Location = new System.Drawing.Point(0, 365);
+            this.ButtonMaintenance.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.ButtonMaintenance.Name = "ButtonMaintenance";
+            this.ButtonMaintenance.ShadowDecoration.Parent = this.ButtonMaintenance;
+            this.ButtonMaintenance.Size = new System.Drawing.Size(191, 55);
+            this.ButtonMaintenance.TabIndex = 5;
+            this.ButtonMaintenance.Text = "Maintenance";
+            this.ButtonMaintenance.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button5
+            // ButtonCarburants
             // 
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.BorderRadius = 8;
-            this.guna2Button5.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
-            this.guna2Button5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button5.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button5.Location = new System.Drawing.Point(0, 219);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(191, 55);
-            this.guna2Button5.TabIndex = 3;
-            this.guna2Button5.Text = "Missions";
-            this.guna2Button5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonCarburants.Animated = true;
+            this.ButtonCarburants.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonCarburants.BorderRadius = 8;
+            this.ButtonCarburants.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.ButtonCarburants.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonCarburants.CheckedState.Parent = this.ButtonCarburants;
+            this.ButtonCarburants.CustomImages.Parent = this.ButtonCarburants;
+            this.ButtonCarburants.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonCarburants.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ButtonCarburants.ForeColor = System.Drawing.Color.White;
+            this.ButtonCarburants.HoverState.Parent = this.ButtonCarburants;
+            this.ButtonCarburants.Image = global::Gestion_parc.Properties.Resources.gas_Standard;
+            this.ButtonCarburants.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonCarburants.ImageSize = new System.Drawing.Size(50, 50);
+            this.ButtonCarburants.Location = new System.Drawing.Point(0, 292);
+            this.ButtonCarburants.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.ButtonCarburants.Name = "ButtonCarburants";
+            this.ButtonCarburants.ShadowDecoration.Parent = this.ButtonCarburants;
+            this.ButtonCarburants.Size = new System.Drawing.Size(191, 55);
+            this.ButtonCarburants.TabIndex = 4;
+            this.ButtonCarburants.Text = "Carburants";
+            this.ButtonCarburants.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // guna2Button4
+            // ButtonMissions
             // 
-            this.guna2Button4.Animated = true;
-            this.guna2Button4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.BorderRadius = 8;
-            this.guna2Button4.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            this.guna2Button4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button4.ImageSize = new System.Drawing.Size(50, 50);
-            this.guna2Button4.Location = new System.Drawing.Point(0, 146);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(191, 55);
-            this.guna2Button4.TabIndex = 2;
-            this.guna2Button4.Text = "Fonctionnaires";
-            this.guna2Button4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonMissions.Animated = true;
+            this.ButtonMissions.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonMissions.BorderRadius = 8;
+            this.ButtonMissions.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.ButtonMissions.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonMissions.CheckedState.Parent = this.ButtonMissions;
+            this.ButtonMissions.CustomImages.Parent = this.ButtonMissions;
+            this.ButtonMissions.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonMissions.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ButtonMissions.ForeColor = System.Drawing.Color.White;
+            this.ButtonMissions.HoverState.Parent = this.ButtonMissions;
+            this.ButtonMissions.Image = global::Gestion_parc.Properties.Resources.mission_Standard;
+            this.ButtonMissions.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonMissions.ImageSize = new System.Drawing.Size(50, 50);
+            this.ButtonMissions.Location = new System.Drawing.Point(0, 219);
+            this.ButtonMissions.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.ButtonMissions.Name = "ButtonMissions";
+            this.ButtonMissions.ShadowDecoration.Parent = this.ButtonMissions;
+            this.ButtonMissions.Size = new System.Drawing.Size(191, 55);
+            this.ButtonMissions.TabIndex = 3;
+            this.ButtonMissions.Text = "Missions";
+            this.ButtonMissions.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // ButtonFonctionnaires
+            // 
+            this.ButtonFonctionnaires.Animated = true;
+            this.ButtonFonctionnaires.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonFonctionnaires.BorderRadius = 8;
+            this.ButtonFonctionnaires.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.ButtonFonctionnaires.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(29)))), ((int)(((byte)(169)))));
+            this.ButtonFonctionnaires.CheckedState.Parent = this.ButtonFonctionnaires;
+            this.ButtonFonctionnaires.CustomImages.Parent = this.ButtonFonctionnaires;
+            this.ButtonFonctionnaires.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonFonctionnaires.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.ButtonFonctionnaires.ForeColor = System.Drawing.Color.White;
+            this.ButtonFonctionnaires.HoverState.Parent = this.ButtonFonctionnaires;
+            this.ButtonFonctionnaires.Image = global::Gestion_parc.Properties.Resources.employee_Standard;
+            this.ButtonFonctionnaires.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ButtonFonctionnaires.ImageSize = new System.Drawing.Size(50, 50);
+            this.ButtonFonctionnaires.Location = new System.Drawing.Point(0, 146);
+            this.ButtonFonctionnaires.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.ButtonFonctionnaires.Name = "ButtonFonctionnaires";
+            this.ButtonFonctionnaires.ShadowDecoration.Parent = this.ButtonFonctionnaires;
+            this.ButtonFonctionnaires.Size = new System.Drawing.Size(191, 55);
+            this.ButtonFonctionnaires.TabIndex = 2;
+            this.ButtonFonctionnaires.Text = "Fonctionnaires";
+            this.ButtonFonctionnaires.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // ButtonVehicule
             // 
@@ -206,7 +231,7 @@
             this.ButtonVehicule.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.ButtonVehicule.ForeColor = System.Drawing.Color.White;
             this.ButtonVehicule.HoverState.Parent = this.ButtonVehicule;
-            this.ButtonVehicule.Image = ((System.Drawing.Image)(resources.GetObject("ButtonVehicule.Image")));
+            this.ButtonVehicule.Image = global::Gestion_parc.Properties.Resources.car_Standard;
             this.ButtonVehicule.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonVehicule.ImageSize = new System.Drawing.Size(50, 50);
             this.ButtonVehicule.Location = new System.Drawing.Point(0, 73);
@@ -232,7 +257,7 @@
             this.ButtonHome.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.ButtonHome.ForeColor = System.Drawing.Color.White;
             this.ButtonHome.HoverState.Parent = this.ButtonHome;
-            this.ButtonHome.Image = ((System.Drawing.Image)(resources.GetObject("ButtonHome.Image")));
+            this.ButtonHome.Image = global::Gestion_parc.Properties.Resources.home_Standard;
             this.ButtonHome.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonHome.ImageSize = new System.Drawing.Size(50, 50);
             this.ButtonHome.Location = new System.Drawing.Point(0, 0);
@@ -266,47 +291,35 @@
             this.guna2BorderlessForm1.HasFormShadow = false;
             this.guna2BorderlessForm1.ResizeForm = false;
             // 
-            // label3
+            // labelTitle
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(16)))), ((int)(((byte)(65)))));
-            this.label3.Location = new System.Drawing.Point(196, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 37);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Gestion Du Parc";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(139)))), ((int)(((byte)(220)))));
+            this.labelTitle.Location = new System.Drawing.Point(196, 17);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(213, 37);
+            this.labelTitle.TabIndex = 13;
+            this.labelTitle.Text = "Gestion Du Parc";
             // 
-            // label1
+            // labelUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(664, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 25);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "User Name";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
-            this.guna2PictureBox1.Image = global::Gestion_parc.Properties.Resources.man;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(613, 8);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(45, 45);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 7;
-            this.guna2PictureBox1.TabStop = false;
+            this.labelUser.AutoSize = true;
+            this.labelUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
+            this.labelUser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.Black;
+            this.labelUser.Location = new System.Drawing.Point(664, 17);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(105, 25);
+            this.labelUser.TabIndex = 6;
+            this.labelUser.Text = "User Name";
             // 
             // ButtonMinimize
             // 
             this.ButtonMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonMinimize.Animated = true;
             this.ButtonMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonMinimize.BackgroundImage")));
+            this.ButtonMinimize.BackgroundImage = global::Gestion_parc.Properties.Resources.minimize_Standard;
             this.ButtonMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonMinimize.CheckedState.Parent = this.ButtonMinimize;
             this.ButtonMinimize.CustomImages.Parent = this.ButtonMinimize;
@@ -327,7 +340,7 @@
             this.ButtonMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonMaximize.Animated = true;
             this.ButtonMaximize.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonMaximize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonMaximize.BackgroundImage")));
+            this.ButtonMaximize.BackgroundImage = global::Gestion_parc.Properties.Resources.maximize_Standard;
             this.ButtonMaximize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonMaximize.CheckedState.Parent = this.ButtonMaximize;
             this.ButtonMaximize.CustomImages.Parent = this.ButtonMaximize;
@@ -348,7 +361,7 @@
             this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonClose.Animated = true;
             this.ButtonClose.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonClose.BackgroundImage")));
+            this.ButtonClose.BackgroundImage = global::Gestion_parc.Properties.Resources.close_Standard;
             this.ButtonClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonClose.CheckedState.Parent = this.ButtonClose;
             this.ButtonClose.CustomImages.Parent = this.ButtonClose;
@@ -358,38 +371,23 @@
             this.ButtonClose.HoverState.Parent = this.ButtonClose;
             this.ButtonClose.Location = new System.Drawing.Point(858, 12);
             this.ButtonClose.Name = "ButtonClose";
-            this.ButtonClose.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.ButtonClose.ShadowDecoration.Parent = this.ButtonClose;
             this.ButtonClose.Size = new System.Drawing.Size(30, 30);
-            this.ButtonClose.TabIndex = 5;
+            this.ButtonClose.TabIndex = 14;
             this.ButtonClose.UseTransparentBackground = true;
             this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
-            // guna2ComboBox1
+            // PictureBoxUser
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
-            "Standard",
-            "Second",
-            "Third",
-            "Light",
-            "Dark"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(25, 474);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(140, 36);
-            this.guna2ComboBox1.TabIndex = 14;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.PictureBoxUser.Image = global::Gestion_parc.Properties.Resources.man;
+            this.PictureBoxUser.Location = new System.Drawing.Point(613, 9);
+            this.PictureBoxUser.Name = "PictureBoxUser";
+            this.PictureBoxUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PictureBoxUser.ShadowDecoration.Parent = this.PictureBoxUser;
+            this.PictureBoxUser.Size = new System.Drawing.Size(45, 45);
+            this.PictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBoxUser.TabIndex = 15;
+            this.PictureBoxUser.TabStop = false;
             // 
             // FormMain
             // 
@@ -397,20 +395,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
             this.ClientSize = new System.Drawing.Size(900, 600);
-            this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.PictureBoxUser);
+            this.Controls.Add(this.ButtonClose);
+            this.Controls.Add(this.labelTitle);
+            this.Controls.Add(this.labelUser);
+            this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.ButtonMinimize);
             this.Controls.Add(this.ButtonMaximize);
-            this.Controls.Add(this.ButtonClose);
             this.Controls.Add(this.PanelContent);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(800, 500);
             this.Name = "FormMain";
             this.Text = "FormMain";
-            this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.PanelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -418,22 +416,22 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel PanelMenu;
         private Guna.UI2.WinForms.Guna2Button ButtonHome;
         private Guna.UI2.WinForms.Guna2Button ButtonVehicule;
         private Guna.UI2.WinForms.Guna2Panel PanelContent;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2CircleButton ButtonClose;
+        private Guna.UI2.WinForms.Guna2Button ButtonMaintenance;
+        private Guna.UI2.WinForms.Guna2Button ButtonCarburants;
+        private Guna.UI2.WinForms.Guna2Button ButtonMissions;
+        private Guna.UI2.WinForms.Guna2Button ButtonFonctionnaires;
         private Guna.UI2.WinForms.Guna2Button ButtonMinimize;
         private Guna.UI2.WinForms.Guna2Button ButtonMaximize;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelTitle;
+        private Guna.UI2.WinForms.Guna2Button ButtonDisconnect;
+        private System.Windows.Forms.Label labelUser;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2Button ButtonClose;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxUser;
     }
 }

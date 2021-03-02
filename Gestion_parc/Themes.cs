@@ -10,12 +10,12 @@ namespace Gestion_parc
     class Themes
     {
         public enum ColorTheme { Standard, Second, Third, Light, Dark };
-        public ColorTheme Theme { get; set; }
+        public ColorTheme SelectedTheme { get; set; }
         public Color Primary1
         {
             get
             {
-                switch (this.Theme)
+                switch (this.SelectedTheme)
                 {
                     case ColorTheme.Standard:
                             return Color.FromArgb(245, 139, 0);
@@ -40,7 +40,7 @@ namespace Gestion_parc
         {
             get
             {
-                switch (this.Theme)
+                switch (this.SelectedTheme)
                 {
                     case ColorTheme.Standard:
                         return Color.FromArgb(99, 170, 227);
@@ -65,7 +65,7 @@ namespace Gestion_parc
         {
             get
             {
-                switch (this.Theme)
+                switch (this.SelectedTheme)
                 {
                     case ColorTheme.Standard:
                         return Color.FromArgb(66, 75, 84);
@@ -78,7 +78,7 @@ namespace Gestion_parc
                     case ColorTheme.Dark:
                         return Color.FromArgb(245, 139, 0);
                     default:
-                        return Color.FromArgb(245, 139, 0);
+                        return Color.FromArgb(66, 75, 84);
                 }
             }
             set
@@ -90,7 +90,7 @@ namespace Gestion_parc
         {
             get
             {
-                switch (this.Theme)
+                switch (this.SelectedTheme)
                 {
                     case ColorTheme.Standard:
                         return Color.FromArgb(232, 229, 218);
@@ -103,7 +103,7 @@ namespace Gestion_parc
                     case ColorTheme.Dark:
                         return Color.FromArgb(245, 139, 0);
                     default:
-                        return Color.FromArgb(245, 139, 0);
+                        return Color.FromArgb(232, 229, 218);
                 }
             }
             set
@@ -115,7 +115,7 @@ namespace Gestion_parc
         {
             get
             {
-                switch (this.Theme)
+                switch (this.SelectedTheme)
                 {
                     case ColorTheme.Standard:
                         return Color.FromArgb(254, 252, 253);
@@ -128,7 +128,7 @@ namespace Gestion_parc
                     case ColorTheme.Dark:
                         return Color.FromArgb(245, 139, 0);
                     default:
-                        return Color.FromArgb(245, 139, 0);
+                        return Color.FromArgb(254, 252, 253);
                 }
             }
             set
@@ -136,5 +136,6 @@ namespace Gestion_parc
                 this.Accent2 = value;
             }
         }
+        
     }
 }

@@ -71,7 +71,7 @@
             this.TextBoxUser.BackColor = System.Drawing.Color.Transparent;
             this.TextBoxUser.BorderRadius = 21;
             this.TextBoxUser.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxUser.DefaultText = "";
+            this.TextBoxUser.DefaultText = "user";
             this.TextBoxUser.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextBoxUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -88,6 +88,7 @@
             this.TextBoxUser.PasswordChar = '\0';
             this.TextBoxUser.PlaceholderText = "User Name";
             this.TextBoxUser.SelectedText = "";
+            this.TextBoxUser.SelectionStart = 4;
             this.TextBoxUser.ShadowDecoration.Parent = this.TextBoxUser;
             this.TextBoxUser.Size = new System.Drawing.Size(250, 45);
             this.TextBoxUser.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -99,7 +100,7 @@
             this.TextBoxPass.AutoRoundedCorners = true;
             this.TextBoxPass.BorderRadius = 21;
             this.TextBoxPass.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBoxPass.DefaultText = "";
+            this.TextBoxPass.DefaultText = "user";
             this.TextBoxPass.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxPass.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.TextBoxPass.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
@@ -113,9 +114,10 @@
             this.TextBoxPass.Location = new System.Drawing.Point(75, 286);
             this.TextBoxPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxPass.Name = "TextBoxPass";
-            this.TextBoxPass.PasswordChar = '\0';
+            this.TextBoxPass.PasswordChar = '*';
             this.TextBoxPass.PlaceholderText = "Password";
             this.TextBoxPass.SelectedText = "";
+            this.TextBoxPass.SelectionStart = 4;
             this.TextBoxPass.ShadowDecoration.Parent = this.TextBoxPass;
             this.TextBoxPass.Size = new System.Drawing.Size(250, 45);
             this.TextBoxPass.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;

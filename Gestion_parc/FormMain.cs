@@ -13,25 +13,27 @@ namespace Gestion_parc
 {
     public partial class FormMain : Form
     {
+        Themes MyTheme = new Themes();
         public FormMain()
         {
             InitializeComponent();
         }
-
+        private void ApplyTheme(Themes.ColorTheme T)
+        {
+            MyTheme.SelectedTheme = T;
+            PanelMenu.FillColor = MyTheme.Primary1;
+        }
         private void ButtonClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
         private void LoadForm(Form form)
         {
-            foreach (Form F in PanelContent.Controls)
-            {
-                F.Close();
-            }
+            PanelContent.Controls.Clear();
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;
             PanelContent.Controls.Add(form);
-            label3.Hide();
+            labelTitle.Hide();
             form.Show();
         }
         private void ButtonMaximize_Click(object sender, EventArgs e)
@@ -39,12 +41,12 @@ namespace Gestion_parc
             if (this.WindowState == FormWindowState.Normal)
             {
                 this.WindowState = FormWindowState.Maximized;
-                ButtonMaximize.BackgroundImage = Properties.Resources.shrink;
+                ButtonMaximize.BackgroundImage = Properties.Resources.shrink_Standard;
             }
             else if (this.WindowState == FormWindowState.Maximized)
             {
                 this.WindowState = FormWindowState.Normal;
-                ButtonMaximize.BackgroundImage = Properties.Resources.maximize;
+                ButtonMaximize.BackgroundImage = Properties.Resources.maximize_Standard;
             }
         }
 
@@ -60,7 +62,8 @@ namespace Gestion_parc
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            ApplyTheme(Themes.ColorTheme.Standard);
         }
+
     }
 }
