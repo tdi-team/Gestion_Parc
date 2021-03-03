@@ -54,25 +54,43 @@ namespace Gestion_parc
         {
             try
             {
-                if (Search(TextBoxUser.Text))
+                if (TextBoxUser.Text != "")
                 {
-                    if (Check(TextBoxUser.Text, TextBoxPass.Text))
+                    if (TextBoxPass.Text != "")
                     {
-                        this.Hide();
-                        FormMain F = new FormMain();
-                        F.Show();
+                        if (Search(TextBoxUser.Text))
+                        {
+                            if (Check(TextBoxUser.Text, TextBoxPass.Text))
+                            {
+                                this.Hide();
+                                FormMain F = new FormMain();
+                                F.Show();
+                            }
+                            else
+                            {
+                                label2.Text = "Password Incorrect";
+                                label2.Show();
+                                TextBoxPass.ShadowDecoration.Enabled = true;
+                            }
+                        }
+                        else
+                        {
+                            label1.Text = "user does not exist";
+                            label1.Show();
+                            TextBoxUser.ShadowDecoration.Enabled = true;
+                        }
                     }
                     else
                     {
-                        guna2HtmlToolTip1.Show("Password incorrect", this, TextBoxPass.Location.X, TextBoxPass.Location.Y - TextBoxPass.Height, 3000);
-                        TextBoxPass.ShadowDecoration.Color = Color.Red;
+                        label2.Text = "Fill password";
+                        label2.Show();
                         TextBoxPass.ShadowDecoration.Enabled = true;
                     }
                 }
                 else
                 {
-                    guna2HtmlToolTip1.Show("User doen't exist", this, TextBoxUser.Location.X, TextBoxUser.Location.Y - TextBoxUser.Height, 3000);
-                    TextBoxUser.ShadowDecoration.Color = Color.Red;
+                    label1.Text = "Fill user name";
+                    label1.Show();
                     TextBoxUser.ShadowDecoration.Enabled = true;
                 }
                 
@@ -91,13 +109,13 @@ namespace Gestion_parc
         private void TextBoxUser_TextChanged(object sender, EventArgs e)
         {
             TextBoxUser.ShadowDecoration.Enabled = false;
-            guna2HtmlToolTip1.Hide(this);
+            label1.Hide();
         }
 
         private void TextBoxPass_TextChanged(object sender, EventArgs e)
         {
             TextBoxPass.ShadowDecoration.Enabled = false;
-            guna2HtmlToolTip1.Hide(this);
+            label2.Hide();
         }
     }
 }

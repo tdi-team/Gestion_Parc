@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Gestion_parc.SubForms;
 namespace Gestion_parc
 {
     public partial class FormVehicules : Form
@@ -16,6 +16,22 @@ namespace Gestion_parc
         {
             InitializeComponent();
             
+        }
+
+        private void ButtonAjouter_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                AddVehicule add = new AddVehicule();
+                add.Owner = this;
+                add.StartPosition = FormStartPosition.CenterScreen;
+                add.TopMost = true;
+                add.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

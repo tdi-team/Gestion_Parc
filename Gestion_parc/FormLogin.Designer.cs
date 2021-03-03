@@ -37,8 +37,9 @@
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ButtonLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlToolTip1 = new Guna.UI2.WinForms.Guna2HtmlToolTip();
             this.guna2DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,13 +85,14 @@
             this.TextBoxUser.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.TextBoxUser.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxUser.HoverState.Parent = this.TextBoxUser;
-            this.TextBoxUser.Location = new System.Drawing.Point(73, 232);
+            this.TextBoxUser.Location = new System.Drawing.Point(73, 224);
             this.TextBoxUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxUser.Name = "TextBoxUser";
             this.TextBoxUser.PasswordChar = '\0';
             this.TextBoxUser.PlaceholderText = "User Name";
             this.TextBoxUser.SelectedText = "";
             this.TextBoxUser.SelectionStart = 4;
+            this.TextBoxUser.ShadowDecoration.Color = System.Drawing.Color.Red;
             this.TextBoxUser.ShadowDecoration.Parent = this.TextBoxUser;
             this.TextBoxUser.Size = new System.Drawing.Size(250, 45);
             this.TextBoxUser.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -115,13 +117,14 @@
             this.TextBoxPass.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.TextBoxPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxPass.HoverState.Parent = this.TextBoxPass;
-            this.TextBoxPass.Location = new System.Drawing.Point(73, 317);
+            this.TextBoxPass.Location = new System.Drawing.Point(73, 290);
             this.TextBoxPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBoxPass.Name = "TextBoxPass";
             this.TextBoxPass.PasswordChar = '*';
             this.TextBoxPass.PlaceholderText = "Password";
             this.TextBoxPass.SelectedText = "";
             this.TextBoxPass.SelectionStart = 4;
+            this.TextBoxPass.ShadowDecoration.Color = System.Drawing.Color.Red;
             this.TextBoxPass.ShadowDecoration.Parent = this.TextBoxPass;
             this.TextBoxPass.Size = new System.Drawing.Size(250, 45);
             this.TextBoxPass.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -157,7 +160,7 @@
             this.guna2ButtonLogin.Image = ((System.Drawing.Image)(resources.GetObject("guna2ButtonLogin.Image")));
             this.guna2ButtonLogin.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.guna2ButtonLogin.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2ButtonLogin.Location = new System.Drawing.Point(108, 395);
+            this.guna2ButtonLogin.Location = new System.Drawing.Point(110, 387);
             this.guna2ButtonLogin.Name = "guna2ButtonLogin";
             this.guna2ButtonLogin.ShadowDecoration.Parent = this.guna2ButtonLogin;
             this.guna2ButtonLogin.Size = new System.Drawing.Size(180, 45);
@@ -165,27 +168,42 @@
             this.guna2ButtonLogin.Text = "Login";
             this.guna2ButtonLogin.Click += new System.EventHandler(this.guna2ButtonLogin_Click);
             // 
-            // guna2HtmlToolTip1
-            // 
-            this.guna2HtmlToolTip1.AllowLinksHandling = true;
-            this.guna2HtmlToolTip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(221)))), ((int)(((byte)(221)))));
-            this.guna2HtmlToolTip1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(132)))), ((int)(((byte)(135)))));
-            this.guna2HtmlToolTip1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlToolTip1.MaximumSize = new System.Drawing.Size(0, 0);
-            this.guna2HtmlToolTip1.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(0)))), ((int)(((byte)(8)))));
-            this.guna2HtmlToolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Error;
-            this.guna2HtmlToolTip1.ToolTipTitle = "Error";
-            // 
             // guna2DragControl2
             // 
             this.guna2DragControl2.ContainerControl = this;
             this.guna2DragControl2.TargetControl = this;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(84, 273);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "label1";
+            this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(84, 339);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "label2";
+            this.label2.Visible = false;
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(400, 500);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.guna2ButtonLogin);
             this.Controls.Add(this.TextBoxUser);
@@ -196,6 +214,7 @@
             this.Text = "FormLogin";
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -208,7 +227,8 @@
         private Guna.UI2.WinForms.Guna2TextBox TextBoxPass;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2HtmlToolTip guna2HtmlToolTip1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

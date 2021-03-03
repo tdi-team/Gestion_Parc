@@ -28,10 +28,10 @@ namespace Gestion_parc
         {
             if (form.Name != currentForm)
             {
-                PanelContent.Controls.Clear();
+                ButtonDisconnect.Controls.Clear();
                 form.TopLevel = false;
                 form.Dock = DockStyle.Fill;
-                PanelContent.Controls.Add(form);
+                ButtonDisconnect.Controls.Add(form);
                 labelTitle.Hide();
                 form.Show();
                 currentForm = form.Name;
@@ -88,9 +88,10 @@ namespace Gestion_parc
         {
 
         }
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
         {
-            ApplyTheme(Themes.ColorTheme.Standard);
+            Application.Exit();
         }
 
     }
