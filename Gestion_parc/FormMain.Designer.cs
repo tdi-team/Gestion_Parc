@@ -31,12 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.PanelMenu = new Guna.UI2.WinForms.Guna2Panel();
-            this.ButtonDisconnect = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.labelUser = new System.Windows.Forms.Label();
-            this.PictureBoxUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ButtonClose = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonMaintenance = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonCarburants = new Guna.UI2.WinForms.Guna2Button();
@@ -44,6 +38,12 @@
             this.ButtonFonctionnaires = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonVehicule = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonHome = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonDisconnect = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.labelUser = new System.Windows.Forms.Label();
+            this.PictureBoxUser = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.ButtonClose = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonMinimize = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonMaximize = new Guna.UI2.WinForms.Guna2Button();
             this.PanelMenu.SuspendLayout();
@@ -71,84 +71,6 @@
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
             this.PanelMenu.Size = new System.Drawing.Size(191, 601);
             this.PanelMenu.TabIndex = 0;
-            // 
-            // ButtonDisconnect
-            // 
-            this.ButtonDisconnect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonDisconnect.BorderRadius = 10;
-            this.ButtonDisconnect.FillColor = System.Drawing.Color.MintCream;
-            this.ButtonDisconnect.Location = new System.Drawing.Point(196, 71);
-            this.ButtonDisconnect.Name = "ButtonDisconnect";
-            this.ButtonDisconnect.ShadowDecoration.Parent = this.ButtonDisconnect;
-            this.ButtonDisconnect.Size = new System.Drawing.Size(692, 520);
-            this.ButtonDisconnect.TabIndex = 2;
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.AnimateWindow = true;
-            this.guna2BorderlessForm1.BorderRadius = 15;
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockForm = false;
-            this.guna2BorderlessForm1.HasFormShadow = false;
-            this.guna2BorderlessForm1.ResizeForm = false;
-            // 
-            // labelTitle
-            // 
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(139)))), ((int)(((byte)(220)))));
-            this.labelTitle.Location = new System.Drawing.Point(196, 17);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(212, 37);
-            this.labelTitle.TabIndex = 13;
-            this.labelTitle.Text = "Gestion Du Parc";
-            // 
-            // labelUser
-            // 
-            this.labelUser.AutoSize = true;
-            this.labelUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
-            this.labelUser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUser.ForeColor = System.Drawing.Color.Black;
-            this.labelUser.Location = new System.Drawing.Point(664, 17);
-            this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(105, 25);
-            this.labelUser.TabIndex = 6;
-            this.labelUser.Text = "User Name";
-            // 
-            // PictureBoxUser
-            // 
-            this.PictureBoxUser.Image = global::Gestion_parc.Properties.Resources.man;
-            this.PictureBoxUser.Location = new System.Drawing.Point(613, 9);
-            this.PictureBoxUser.Name = "PictureBoxUser";
-            this.PictureBoxUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PictureBoxUser.ShadowDecoration.Parent = this.PictureBoxUser;
-            this.PictureBoxUser.Size = new System.Drawing.Size(45, 45);
-            this.PictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxUser.TabIndex = 15;
-            this.PictureBoxUser.TabStop = false;
-            // 
-            // ButtonClose
-            // 
-            this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonClose.Animated = true;
-            this.ButtonClose.BackColor = System.Drawing.Color.Transparent;
-            this.ButtonClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonClose.BackgroundImage")));
-            this.ButtonClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonClose.CheckedState.Parent = this.ButtonClose;
-            this.ButtonClose.CustomImages.Parent = this.ButtonClose;
-            this.ButtonClose.FillColor = System.Drawing.Color.Transparent;
-            this.ButtonClose.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButtonClose.ForeColor = System.Drawing.Color.White;
-            this.ButtonClose.HoverState.Parent = this.ButtonClose;
-            this.ButtonClose.Location = new System.Drawing.Point(858, 12);
-            this.ButtonClose.Name = "ButtonClose";
-            this.ButtonClose.ShadowDecoration.Parent = this.ButtonClose;
-            this.ButtonClose.Size = new System.Drawing.Size(30, 30);
-            this.ButtonClose.TabIndex = 14;
-            this.ButtonClose.UseTransparentBackground = true;
-            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
             // guna2Button1
             // 
@@ -332,6 +254,84 @@
             this.ButtonHome.Text = "Home";
             this.ButtonHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.ButtonHome.Click += new System.EventHandler(this.ButtonHome_Click);
+            // 
+            // ButtonDisconnect
+            // 
+            this.ButtonDisconnect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonDisconnect.BorderRadius = 10;
+            this.ButtonDisconnect.FillColor = System.Drawing.Color.MintCream;
+            this.ButtonDisconnect.Location = new System.Drawing.Point(196, 71);
+            this.ButtonDisconnect.Name = "ButtonDisconnect";
+            this.ButtonDisconnect.ShadowDecoration.Parent = this.ButtonDisconnect;
+            this.ButtonDisconnect.Size = new System.Drawing.Size(692, 520);
+            this.ButtonDisconnect.TabIndex = 2;
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.AnimateWindow = true;
+            this.guna2BorderlessForm1.BorderRadius = 15;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockForm = false;
+            this.guna2BorderlessForm1.HasFormShadow = false;
+            this.guna2BorderlessForm1.ResizeForm = false;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(58)))), ((int)(((byte)(139)))), ((int)(((byte)(220)))));
+            this.labelTitle.Location = new System.Drawing.Point(196, 17);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(212, 37);
+            this.labelTitle.TabIndex = 13;
+            this.labelTitle.Text = "Gestion Du Parc";
+            // 
+            // labelUser
+            // 
+            this.labelUser.AutoSize = true;
+            this.labelUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(238)))), ((int)(((byte)(248)))));
+            this.labelUser.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelUser.ForeColor = System.Drawing.Color.Black;
+            this.labelUser.Location = new System.Drawing.Point(664, 17);
+            this.labelUser.Name = "labelUser";
+            this.labelUser.Size = new System.Drawing.Size(105, 25);
+            this.labelUser.TabIndex = 6;
+            this.labelUser.Text = "User Name";
+            // 
+            // PictureBoxUser
+            // 
+            this.PictureBoxUser.Image = global::Gestion_parc.Properties.Resources.man;
+            this.PictureBoxUser.Location = new System.Drawing.Point(613, 9);
+            this.PictureBoxUser.Name = "PictureBoxUser";
+            this.PictureBoxUser.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PictureBoxUser.ShadowDecoration.Parent = this.PictureBoxUser;
+            this.PictureBoxUser.Size = new System.Drawing.Size(45, 45);
+            this.PictureBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBoxUser.TabIndex = 15;
+            this.PictureBoxUser.TabStop = false;
+            // 
+            // ButtonClose
+            // 
+            this.ButtonClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonClose.Animated = true;
+            this.ButtonClose.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonClose.BackgroundImage")));
+            this.ButtonClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ButtonClose.CheckedState.Parent = this.ButtonClose;
+            this.ButtonClose.CustomImages.Parent = this.ButtonClose;
+            this.ButtonClose.FillColor = System.Drawing.Color.Transparent;
+            this.ButtonClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ButtonClose.ForeColor = System.Drawing.Color.White;
+            this.ButtonClose.HoverState.Parent = this.ButtonClose;
+            this.ButtonClose.Location = new System.Drawing.Point(858, 12);
+            this.ButtonClose.Name = "ButtonClose";
+            this.ButtonClose.ShadowDecoration.Parent = this.ButtonClose;
+            this.ButtonClose.Size = new System.Drawing.Size(30, 30);
+            this.ButtonClose.TabIndex = 14;
+            this.ButtonClose.UseTransparentBackground = true;
+            this.ButtonClose.Click += new System.EventHandler(this.ButtonClose_Click);
             // 
             // ButtonMinimize
             // 

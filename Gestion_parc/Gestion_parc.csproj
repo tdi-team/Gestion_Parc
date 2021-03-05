@@ -36,6 +36,15 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Desktop\Learning projs\TP15\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -76,6 +85,12 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMaintenace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMaintenace.Designer.cs">
+      <DependentUpon>FormMaintenace.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMissions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +109,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\AddCarburant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\AddCarburant.Designer.cs">
+      <DependentUpon>AddCarburant.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForms\AddFonctionnaire.cs">
       <SubType>Form</SubType>
@@ -144,6 +165,9 @@
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMaintenace.resx">
+      <DependentUpon>FormMaintenace.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMissions.resx">
       <DependentUpon>FormMissions.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +178,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\AddCarburant.resx">
+      <DependentUpon>AddCarburant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\AddFonctionnaire.resx">
       <DependentUpon>AddFonctionnaire.cs</DependentUpon>
@@ -173,6 +200,7 @@
     <EmbeddedResource Include="SubForms\EditVehicule.resx">
       <DependentUpon>EditVehicule.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

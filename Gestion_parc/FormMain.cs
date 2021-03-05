@@ -81,12 +81,12 @@ namespace Gestion_parc
 
         private void ButtonCarburants_Click(object sender, EventArgs e)
         {
-
+            LoadForm(new FormCarburants());
         }
 
         private void ButtonMaintenance_Click(object sender, EventArgs e)
         {
-
+            LoadForm(new FormMaintenace());
         }
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
