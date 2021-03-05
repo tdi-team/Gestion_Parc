@@ -94,5 +94,10 @@ namespace Gestion_parc
             Application.Exit();
         }
 
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            string test = "None";
+        }
+
     }
 }
