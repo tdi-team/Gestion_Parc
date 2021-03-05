@@ -71,12 +71,12 @@ namespace Gestion_parc
 
         private void ButtonFonctionnaires_Click(object sender, EventArgs e)
         {
-
+            LoadForm(new FormFonctionnaires());
         }
 
         private void ButtonMissions_Click(object sender, EventArgs e)
         {
-
+            LoadForm(new FormMissions());
         }
 
         private void ButtonCarburants_Click(object sender, EventArgs e)

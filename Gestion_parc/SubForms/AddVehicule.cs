@@ -24,7 +24,18 @@ namespace Gestion_parc.SubForms
 
         private void TextBoxNivCarb_TextChanged(object sender, EventArgs e)
         {
-            TrackBarNivCarb.Value = int.Parse(TextBoxNivCarb.Text);
+            if (TextBoxNivCarb.Text != string.Empty)
+            {
+                int nc = int.Parse(TextBoxNivCarb.Text);
+                if (nc >= 0 && nc <= 100)
+                {
+                    TrackBarNivCarb.Value = nc;
+                }
+                else
+                {
+                    MessageBox.Show("Valeur doit etre entre 0 et 100");
+                }
+            }
         }
 
         private void ButtonCancel_Click(object sender, EventArgs e)
@@ -34,9 +45,12 @@ namespace Gestion_parc.SubForms
 
         private void ButtonSubmit_Click(object sender, EventArgs e)
         {
-            CustomMessageBox cf = new CustomMessageBox("are you sure?", "hhh");
-            if (cf.DialogResult == System.Windows.Forms.DialogResult.Yes)
-                MessageBox.Show("hhhhhhhhh");
+
+        }
+
+        private void TextBoxNivCarb_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
     }
 }

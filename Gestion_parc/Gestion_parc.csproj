@@ -52,6 +52,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectionManager.cs" />
+    <Compile Include="FormCarburants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCarburants.Designer.cs">
+      <DependentUpon>FormCarburants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFonctionnaires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFonctionnaires.Designer.cs">
+      <DependentUpon>FormFonctionnaires.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMissions.Designer.cs">
+      <DependentUpon>FormMissions.cs</DependentUpon>
     </Compile>
     <Compile Include="FormVehicules.cs">
       <SubType>Form</SubType>
@@ -77,17 +95,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SubForms\AddFonctionnaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\AddFonctionnaire.Designer.cs">
+      <DependentUpon>AddFonctionnaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\AddMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\AddMission.Designer.cs">
+      <DependentUpon>AddMission.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubForms\AddVehicule.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SubForms\AddVehicule.Designer.cs">
       <DependentUpon>AddVehicule.cs</DependentUpon>
     </Compile>
-    <Compile Include="SubForms\CustomMessageBox.cs">
+    <Compile Include="SubForms\EditFonctionnaire.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SubForms\CustomMessageBox.Designer.cs">
-      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    <Compile Include="SubForms\EditFonctionnaire.Designer.cs">
+      <DependentUpon>EditFonctionnaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\EditMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\EditMission.Designer.cs">
+      <DependentUpon>EditMission.cs</DependentUpon>
     </Compile>
     <Compile Include="SubForms\EditVehicule.cs">
       <SubType>Form</SubType>
@@ -96,11 +132,20 @@
       <DependentUpon>EditVehicule.cs</DependentUpon>
     </Compile>
     <Compile Include="Themes.cs" />
+    <EmbeddedResource Include="FormCarburants.resx">
+      <DependentUpon>FormCarburants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFonctionnaires.resx">
+      <DependentUpon>FormFonctionnaires.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMissions.resx">
+      <DependentUpon>FormMissions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVehicules.resx">
       <DependentUpon>FormVehicules.cs</DependentUpon>
@@ -110,11 +155,20 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\AddFonctionnaire.resx">
+      <DependentUpon>AddFonctionnaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\AddMission.resx">
+      <DependentUpon>AddMission.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubForms\AddVehicule.resx">
       <DependentUpon>AddVehicule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SubForms\CustomMessageBox.resx">
-      <DependentUpon>CustomMessageBox.cs</DependentUpon>
+    <EmbeddedResource Include="SubForms\EditFonctionnaire.resx">
+      <DependentUpon>EditFonctionnaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\EditMission.resx">
+      <DependentUpon>EditMission.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\EditVehicule.resx">
       <DependentUpon>EditVehicule.cs</DependentUpon>
