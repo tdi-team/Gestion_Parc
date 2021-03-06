@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gestion_parc.SubForms;
+using System.Data.SqlClient;
 namespace Gestion_parc
 {
     public partial class FormVehicules : Form
@@ -18,14 +19,12 @@ namespace Gestion_parc
             
         }
 
+      
         private void ButtonAjouter_Click(object sender, EventArgs e)
         {
             try
             {
                 AddVehicule add = new AddVehicule();
-                add.Owner = this;
-                add.StartPosition = FormStartPosition.CenterScreen;
-                add.TopMost = true;
                 add.ShowDialog();
             }
             catch (Exception ex)
@@ -33,5 +32,14 @@ namespace Gestion_parc
                 MessageBox.Show(ex.Message);
             }
         }
+
+
+
+        private void FormVehicules_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+       
     }
 }

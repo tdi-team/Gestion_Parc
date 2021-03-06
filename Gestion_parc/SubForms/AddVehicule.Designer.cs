@@ -33,7 +33,7 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.TextBoxMatricule = new Guna.UI2.WinForms.Guna2TextBox();
             this.ComboBoxType = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ComboBoxEtat = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboBoxStatut = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxMarque = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TextBoxModele = new Guna.UI2.WinForms.Guna2TextBox();
             this.TrackBarNivCarb = new Guna.UI2.WinForms.Guna2TrackBar();
@@ -105,26 +105,26 @@
             this.ComboBoxType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.ComboBoxType.TabIndex = 1;
             // 
-            // ComboBoxEtat
+            // ComboBoxStatut
             // 
-            this.ComboBoxEtat.Animated = true;
-            this.ComboBoxEtat.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxEtat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxEtat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxEtat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEtat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEtat.FocusedState.Parent = this.ComboBoxEtat;
-            this.ComboBoxEtat.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxEtat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxEtat.HoverState.Parent = this.ComboBoxEtat;
-            this.ComboBoxEtat.ItemHeight = 30;
-            this.ComboBoxEtat.ItemsAppearance.Parent = this.ComboBoxEtat;
-            this.ComboBoxEtat.Location = new System.Drawing.Point(63, 239);
-            this.ComboBoxEtat.Name = "ComboBoxEtat";
-            this.ComboBoxEtat.ShadowDecoration.Parent = this.ComboBoxEtat;
-            this.ComboBoxEtat.Size = new System.Drawing.Size(200, 36);
-            this.ComboBoxEtat.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.ComboBoxEtat.TabIndex = 2;
+            this.ComboBoxStatut.Animated = true;
+            this.ComboBoxStatut.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxStatut.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxStatut.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxStatut.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxStatut.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxStatut.FocusedState.Parent = this.ComboBoxStatut;
+            this.ComboBoxStatut.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComboBoxStatut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxStatut.HoverState.Parent = this.ComboBoxStatut;
+            this.ComboBoxStatut.ItemHeight = 30;
+            this.ComboBoxStatut.ItemsAppearance.Parent = this.ComboBoxStatut;
+            this.ComboBoxStatut.Location = new System.Drawing.Point(63, 239);
+            this.ComboBoxStatut.Name = "ComboBoxStatut";
+            this.ComboBoxStatut.ShadowDecoration.Parent = this.ComboBoxStatut;
+            this.ComboBoxStatut.Size = new System.Drawing.Size(200, 36);
+            this.ComboBoxStatut.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.ComboBoxStatut.TabIndex = 2;
             // 
             // ComboBoxMarque
             // 
@@ -416,7 +416,7 @@
             this.Controls.Add(this.TrackBarNivCarb);
             this.Controls.Add(this.TextBoxModele);
             this.Controls.Add(this.ComboBoxMarque);
-            this.Controls.Add(this.ComboBoxEtat);
+            this.Controls.Add(this.ComboBoxStatut);
             this.Controls.Add(this.ComboBoxType);
             this.Controls.Add(this.TextBoxMatricule);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -435,7 +435,7 @@
         private Guna.UI2.WinForms.Guna2TrackBar TrackBarNivCarb;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxModele;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxMarque;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEtat;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxStatut;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxType;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxMatricule;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxNivCarb;
