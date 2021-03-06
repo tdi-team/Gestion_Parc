@@ -49,7 +49,7 @@ namespace Gestion_parc
             }
             return result;
         }
-
+        private bool X = true;
         private void guna2ButtonLogin_Click(object sender, EventArgs e)
         {
             try
