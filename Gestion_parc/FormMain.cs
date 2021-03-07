@@ -96,7 +96,7 @@ namespace Gestion_parc
 
         private void FormMain_Load(object sender, EventArgs e)
         {
-            string test = "NoneEEE";
+            //string test = "NoneEEE";
         }
 
     }

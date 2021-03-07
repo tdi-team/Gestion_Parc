@@ -146,7 +146,7 @@ namespace Gestion_parc.SubForms
                     cmd.ExecuteNonQuery();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }

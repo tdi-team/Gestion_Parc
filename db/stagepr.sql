@@ -61,9 +61,9 @@
 
 		select * from Vehicule 
 
-		delete from Vehicule where matricule=2
+		delete from Vehicule where idVehicule>=1
 		delete from Vehicule where matricule=1
-		delete from Vehicule where matricule=3
+		delete from Vehicule where matricule=4
 		delete from Vehicule where matricule=5
 		delete from Vehicule where matricule=4
 		alter table Vehicule alter column Consomage DECIMAL(4,2)
