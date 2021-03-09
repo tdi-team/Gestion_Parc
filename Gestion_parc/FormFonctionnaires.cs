@@ -25,7 +25,6 @@ namespace Gestion_parc
                 AddFonctionnaire add = new AddFonctionnaire();
                 add.Owner = this;
                 add.StartPosition = FormStartPosition.CenterScreen;
-                add.TopMost = true;
                 add.ShowDialog();
             }
             catch (Exception ex)

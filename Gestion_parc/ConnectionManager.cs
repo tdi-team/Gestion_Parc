@@ -8,6 +8,6 @@ namespace Gestion_parc
 {
     class ConnectionManager
     {
-        public static string cs = "Data Source=AXPRO\\AXONE;Initial Catalog=GSPARC;Integrated Security=True";
+        public static string cs = "Data Source=.\\;Initial Catalog=GSPARC;Integrated Security=True";
     }
 }

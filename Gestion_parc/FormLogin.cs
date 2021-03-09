@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Dapper;
 
 namespace Gestion_parc
 {
@@ -49,11 +50,16 @@ namespace Gestion_parc
             }
             return result;
         }
+        
 
         private void guna2ButtonLogin_Click(object sender, EventArgs e)
         {
             try
             {
+                //using (IDbConnection connection = new SqlConnection(ConnectionManager.cs))
+                //{
+                //    connection.Query("dbo.spGetUser @userName @userPass", new { userName = TextBoxUser.Text, userPass = TextBoxPass.Text }).ToList();
+                //}
                 if (TextBoxUser.Text != "")
                 {
                     if (TextBoxPass.Text != "")

@@ -1,0 +1,5 @@
+E:\ProjectEntity\Gestion_Parc\DataLibrary\bin\Release\DataLibrary.dll
+E:\ProjectEntity\Gestion_Parc\DataLibrary\bin\Release\DataLibrary.pdb
+E:\ProjectEntity\Gestion_Parc\DataLibrary\obj\Release\DataLibrary.csprojResolveAssemblyReference.cache
+E:\ProjectEntity\Gestion_Parc\DataLibrary\obj\Release\DataLibrary.dll
+E:\ProjectEntity\Gestion_Parc\DataLibrary\obj\Release\DataLibrary.pdb

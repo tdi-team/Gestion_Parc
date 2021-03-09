@@ -38,7 +38,7 @@
             this.TextBoxModele = new Guna.UI2.WinForms.Guna2TextBox();
             this.TrackBarNivCarb = new Guna.UI2.WinForms.Guna2TrackBar();
             this.label1 = new System.Windows.Forms.Label();
-            this.ButtonSubmit = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonAjouter = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonCancel = new Guna.UI2.WinForms.Guna2Button();
             this.TextBoxNivCarb = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,6 +48,7 @@
             this.TextBoxConsomage = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBoxHorsePower = new Guna.UI2.WinForms.Guna2TextBox();
             this.TextBoxKilometrage = new Guna.UI2.WinForms.Guna2TextBox();
+            this.ButtonSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // guna2DragControl1
@@ -61,7 +62,6 @@
             // 
             // TextBoxMatricule
             // 
-            this.TextBoxMatricule.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextBoxMatricule.DefaultText = "";
             this.TextBoxMatricule.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxMatricule.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -149,7 +149,6 @@
             // 
             // TextBoxModele
             // 
-            this.TextBoxModele.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextBoxModele.DefaultText = "";
             this.TextBoxModele.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxModele.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -195,22 +194,22 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Ajouter une vehicule";
             // 
-            // ButtonSubmit
+            // ButtonAjouter
             // 
-            this.ButtonSubmit.BorderRadius = 5;
-            this.ButtonSubmit.CheckedState.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.CustomImages.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(238)))), ((int)(((byte)(134)))));
-            this.ButtonSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButtonSubmit.ForeColor = System.Drawing.Color.White;
-            this.ButtonSubmit.HoverState.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.Location = new System.Drawing.Point(12, 411);
-            this.ButtonSubmit.Name = "ButtonSubmit";
-            this.ButtonSubmit.ShadowDecoration.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.Size = new System.Drawing.Size(90, 35);
-            this.ButtonSubmit.TabIndex = 7;
-            this.ButtonSubmit.Text = "Submit";
-            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click);
+            this.ButtonAjouter.BorderRadius = 5;
+            this.ButtonAjouter.CheckedState.Parent = this.ButtonAjouter;
+            this.ButtonAjouter.CustomImages.Parent = this.ButtonAjouter;
+            this.ButtonAjouter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(238)))), ((int)(((byte)(134)))));
+            this.ButtonAjouter.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ButtonAjouter.ForeColor = System.Drawing.Color.White;
+            this.ButtonAjouter.HoverState.Parent = this.ButtonAjouter;
+            this.ButtonAjouter.Location = new System.Drawing.Point(12, 411);
+            this.ButtonAjouter.Name = "ButtonAjouter";
+            this.ButtonAjouter.ShadowDecoration.Parent = this.ButtonAjouter;
+            this.ButtonAjouter.Size = new System.Drawing.Size(90, 35);
+            this.ButtonAjouter.TabIndex = 7;
+            this.ButtonAjouter.Text = "Ajouter";
+            this.ButtonAjouter.Click += new System.EventHandler(this.ButtonAjouter_Click);
             // 
             // ButtonCancel
             // 
@@ -227,13 +226,11 @@
             this.ButtonCancel.Size = new System.Drawing.Size(90, 35);
             this.ButtonCancel.TabIndex = 8;
             this.ButtonCancel.Text = "Cancel";
-            this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
             // TextBoxNivCarb
             // 
             this.TextBoxNivCarb.Animated = true;
             this.TextBoxNivCarb.BackColor = System.Drawing.Color.Transparent;
-            this.TextBoxNivCarb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextBoxNivCarb.DefaultText = "0";
             this.TextBoxNivCarb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxNivCarb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -300,7 +297,6 @@
             // 
             // TextBoxCapacite
             // 
-            this.TextBoxCapacite.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextBoxCapacite.DefaultText = "";
             this.TextBoxCapacite.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxCapacite.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -325,7 +321,6 @@
             // 
             // TextBoxConsomage
             // 
-            this.TextBoxConsomage.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextBoxConsomage.DefaultText = "";
             this.TextBoxConsomage.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxConsomage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -350,7 +345,6 @@
             // 
             // TextBoxHorsePower
             // 
-            this.TextBoxHorsePower.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextBoxHorsePower.DefaultText = "";
             this.TextBoxHorsePower.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxHorsePower.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -374,7 +368,6 @@
             // 
             // TextBoxKilometrage
             // 
-            this.TextBoxKilometrage.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.TextBoxKilometrage.DefaultText = "";
             this.TextBoxKilometrage.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.TextBoxKilometrage.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -396,6 +389,22 @@
             this.TextBoxKilometrage.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.TextBoxKilometrage.TabIndex = 16;
             // 
+            // ButtonSubmit
+            // 
+            this.ButtonSubmit.BorderRadius = 5;
+            this.ButtonSubmit.CheckedState.Parent = this.ButtonSubmit;
+            this.ButtonSubmit.CustomImages.Parent = this.ButtonSubmit;
+            this.ButtonSubmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(238)))), ((int)(((byte)(134)))));
+            this.ButtonSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ButtonSubmit.ForeColor = System.Drawing.Color.White;
+            this.ButtonSubmit.HoverState.Parent = this.ButtonSubmit;
+            this.ButtonSubmit.Location = new System.Drawing.Point(12, 411);
+            this.ButtonSubmit.Name = "ButtonSubmit";
+            this.ButtonSubmit.ShadowDecoration.Parent = this.ButtonSubmit;
+            this.ButtonSubmit.Size = new System.Drawing.Size(90, 35);
+            this.ButtonSubmit.TabIndex = 7;
+            this.ButtonSubmit.Text = "Ajouter";
+            // 
             // AddVehicule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -411,7 +420,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TextBoxNivCarb);
             this.Controls.Add(this.ButtonCancel);
-            this.Controls.Add(this.ButtonSubmit);
+            this.Controls.Add(this.ButtonAjouter);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TrackBarNivCarb);
             this.Controls.Add(this.TextBoxModele);
@@ -440,7 +449,7 @@
         private Guna.UI2.WinForms.Guna2TextBox TextBoxMatricule;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxNivCarb;
         private Guna.UI2.WinForms.Guna2Button ButtonCancel;
-        private Guna.UI2.WinForms.Guna2Button ButtonSubmit;
+        private Guna.UI2.WinForms.Guna2Button ButtonAjouter;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxConsomage;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxCapacite;
@@ -448,5 +457,6 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePickerAquisition;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxHorsePower;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxKilometrage;
+        private Guna.UI2.WinForms.Guna2Button ButtonSubmit;
     }
 }
