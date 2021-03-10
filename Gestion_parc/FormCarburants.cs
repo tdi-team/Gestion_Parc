@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Gestion_parc.SubForms;
+using System.Data.SqlClient;
 
 namespace Gestion_parc
 {
@@ -16,6 +17,31 @@ namespace Gestion_parc
         public FormCarburants()
         {
             InitializeComponent();
+        }
+
+        SqlConnection cnx = new SqlConnection(ConnectionManager.cs);
+        SqlCommand cmd = new SqlCommand();
+        SqlDataReader reader;
+        DataTable table = new DataTable();
+        public void RempirGrid()
+        {
+            try
+            {
+                if (table.Rows.Count != 0)
+                {
+                    table.Clear();
+                }
+                cnx.Open();
+                cmd = new SqlCommand("select * from Carburants;", cnx);
+                reader = cmd.ExecuteReader();
+                table.Load(reader);
+                DataGridViewCarburants.DataSource = table;
+                cnx.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void ButtonAjouter_Click(object sender, EventArgs e)
@@ -32,6 +58,11 @@ namespace Gestion_parc
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void FormCarburants_Load(object sender, EventArgs e)
+        {
+            RempirGrid();
         }
     }
 }

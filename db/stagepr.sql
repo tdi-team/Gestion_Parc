@@ -59,6 +59,12 @@
 		CapaciteReservoir INT
 		);
 
+		select V.matricule, V.Modele, TV.nomType, M.nomMarque, SV.nomStatus   from Vehicule V,TypeVehicule TV, Marque M, StatusVehicule SV where V.typeVehicule = TV.idType and M.idMarque = V.Marque and V.statusVehicule = SV.idStatus AND
+
+		--update Vehicule set typeVehicule='" +  + "',DateAquisition='" +  + "',Marque='" +  + "',Modele='" +  + "',statusVehicule='" +  + "',niveauCarburant='" +  + "',Kilometrage='" +  + "',Consomage='" +  + "',HorsePower='" +  + "',HorsePower='" +  + "'where matricule='" +  + "'
+							
+							
+
 		select * from Vehicule 
 
 		delete from Vehicule where idVehicule>=1
@@ -74,11 +80,13 @@
 			idGrade INT IDENTITY PRIMARY KEY,
 			nomGrade VARCHAR(255));
 	
-
+	AffichageFonctionnaire
 	CREATE TABLE _Service (
 			idService INT IDENTITY PRIMARY KEY,
 			nomService VARCHAR(255));
-	
+	select * from Fonctionnaire
+
+	update Fonctionnaire set Nom='dssd' where CIN='FB100120'
 
 	CREATE TABLE Fonctionnaire(
 		idFonctionnaire INT IDENTITY PRIMARY KEY,
@@ -113,6 +121,8 @@
 		quantite decimal(7,2)
 		);
 
+		select * from Carburants
+
 	CREATE TABLE Assurance(
 		idAssurance INT IDENTITY(1,1) PRIMARY KEY,
 		idVehicule INT FOREIGN KEY REFERENCES Vehicule(idVehicule),
@@ -121,9 +131,10 @@
 		CoutAssurance DECIMAL(12,2)
 		);
 
+		select idVehicule from Vehicule where matricule=3
 
-
-
+		select F.CIN,F.Nom,F.Prenom,F.Sexe ,G.nomGrade,S.nomService from  Fonctionnaire F,Grade G ,_Service S where F.idGrade=G.idGrade and F.idService=S.idService
+	
 	create table Mission (
 		idMission int identity primary key ,
 		DateDepart date ,

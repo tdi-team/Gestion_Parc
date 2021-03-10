@@ -1,6 +1,6 @@
 ﻿namespace Gestion_parc.SubForms
 {
-    partial class EditFonctionnaire
+    partial class AffichageFonctionnaire
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.TextBoxAdresse = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.DateTimePickerRecruit = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -39,14 +40,24 @@
             this.TextBoxPrenom = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.DateTimePickerNaissance = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.ButtonCancel = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonSubmit = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.TextBoxLieuNaissance = new Guna.UI2.WinForms.Guna2TextBox();
             this.ComboBoxGrade = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxService = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxSituation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.TextBoxCIN = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.ButtonCancel = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // TextBoxAdresse
@@ -63,7 +74,7 @@
             this.TextBoxAdresse.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxAdresse.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxAdresse.HoverState.Parent = this.TextBoxAdresse;
-            this.TextBoxAdresse.Location = new System.Drawing.Point(303, 346);
+            this.TextBoxAdresse.Location = new System.Drawing.Point(292, 386);
             this.TextBoxAdresse.Name = "TextBoxAdresse";
             this.TextBoxAdresse.PasswordChar = '\0';
             this.TextBoxAdresse.PlaceholderText = "Adresse";
@@ -77,7 +88,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(300, 195);
+            this.label2.Location = new System.Drawing.Point(289, 166);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 15);
             this.label2.TabIndex = 75;
@@ -90,7 +101,7 @@
             this.DateTimePickerRecruit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTimePickerRecruit.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DateTimePickerRecruit.HoverState.Parent = this.DateTimePickerRecruit;
-            this.DateTimePickerRecruit.Location = new System.Drawing.Point(303, 213);
+            this.DateTimePickerRecruit.Location = new System.Drawing.Point(292, 184);
             this.DateTimePickerRecruit.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTimePickerRecruit.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTimePickerRecruit.Name = "DateTimePickerRecruit";
@@ -109,7 +120,7 @@
             this.RadioButtonHomme.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButtonHomme.CheckedState.InnerOffset = -4;
             this.RadioButtonHomme.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadioButtonHomme.Location = new System.Drawing.Point(78, 228);
+            this.RadioButtonHomme.Location = new System.Drawing.Point(67, 226);
             this.RadioButtonHomme.Name = "RadioButtonHomme";
             this.RadioButtonHomme.Size = new System.Drawing.Size(72, 21);
             this.RadioButtonHomme.TabIndex = 72;
@@ -130,7 +141,7 @@
             this.RadioButtonFemme.CheckedState.InnerColor = System.Drawing.Color.White;
             this.RadioButtonFemme.CheckedState.InnerOffset = -4;
             this.RadioButtonFemme.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadioButtonFemme.Location = new System.Drawing.Point(210, 228);
+            this.RadioButtonFemme.Location = new System.Drawing.Point(292, 226);
             this.RadioButtonFemme.Name = "RadioButtonFemme";
             this.RadioButtonFemme.Size = new System.Drawing.Size(68, 21);
             this.RadioButtonFemme.TabIndex = 73;
@@ -155,7 +166,7 @@
             this.TextBoxTel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxTel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxTel.HoverState.Parent = this.TextBoxTel;
-            this.TextBoxTel.Location = new System.Drawing.Point(78, 346);
+            this.TextBoxTel.Location = new System.Drawing.Point(67, 386);
             this.TextBoxTel.Name = "TextBoxTel";
             this.TextBoxTel.PasswordChar = '\0';
             this.TextBoxTel.PlaceholderText = "Tel";
@@ -179,7 +190,7 @@
             this.TextBoxNom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxNom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxNom.HoverState.Parent = this.TextBoxNom;
-            this.TextBoxNom.Location = new System.Drawing.Point(78, 122);
+            this.TextBoxNom.Location = new System.Drawing.Point(67, 127);
             this.TextBoxNom.Name = "TextBoxNom";
             this.TextBoxNom.PasswordChar = '\0';
             this.TextBoxNom.PlaceholderText = "Nom";
@@ -203,7 +214,7 @@
             this.TextBoxEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxEmail.HoverState.Parent = this.TextBoxEmail;
-            this.TextBoxEmail.Location = new System.Drawing.Point(78, 304);
+            this.TextBoxEmail.Location = new System.Drawing.Point(67, 329);
             this.TextBoxEmail.Name = "TextBoxEmail";
             this.TextBoxEmail.PasswordChar = '\0';
             this.TextBoxEmail.PlaceholderText = "Email";
@@ -227,7 +238,7 @@
             this.TextBoxPrenom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxPrenom.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxPrenom.HoverState.Parent = this.TextBoxPrenom;
-            this.TextBoxPrenom.Location = new System.Drawing.Point(78, 177);
+            this.TextBoxPrenom.Location = new System.Drawing.Point(67, 184);
             this.TextBoxPrenom.Name = "TextBoxPrenom";
             this.TextBoxPrenom.PasswordChar = '\0';
             this.TextBoxPrenom.PlaceholderText = "Prenom";
@@ -241,7 +252,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(300, 122);
+            this.label3.Location = new System.Drawing.Point(289, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 15);
             this.label3.TabIndex = 67;
@@ -254,7 +265,7 @@
             this.DateTimePickerNaissance.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTimePickerNaissance.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.DateTimePickerNaissance.HoverState.Parent = this.DateTimePickerNaissance;
-            this.DateTimePickerNaissance.Location = new System.Drawing.Point(303, 140);
+            this.DateTimePickerNaissance.Location = new System.Drawing.Point(292, 127);
             this.DateTimePickerNaissance.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTimePickerNaissance.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTimePickerNaissance.Name = "DateTimePickerNaissance";
@@ -263,50 +274,16 @@
             this.DateTimePickerNaissance.TabIndex = 66;
             this.DateTimePickerNaissance.Value = new System.DateTime(2021, 3, 4, 11, 29, 19, 412);
             // 
-            // ButtonCancel
-            // 
-            this.ButtonCancel.BorderRadius = 5;
-            this.ButtonCancel.CheckedState.Parent = this.ButtonCancel;
-            this.ButtonCancel.CustomImages.Parent = this.ButtonCancel;
-            this.ButtonCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(166)))), ((int)(((byte)(157)))));
-            this.ButtonCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButtonCancel.ForeColor = System.Drawing.Color.White;
-            this.ButtonCancel.HoverState.Parent = this.ButtonCancel;
-            this.ButtonCancel.Location = new System.Drawing.Point(154, 408);
-            this.ButtonCancel.Name = "ButtonCancel";
-            this.ButtonCancel.ShadowDecoration.Parent = this.ButtonCancel;
-            this.ButtonCancel.Size = new System.Drawing.Size(90, 35);
-            this.ButtonCancel.TabIndex = 65;
-            this.ButtonCancel.Text = "Cancel";
-            this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
-            // 
-            // ButtonSubmit
-            // 
-            this.ButtonSubmit.BorderRadius = 5;
-            this.ButtonSubmit.CheckedState.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.CustomImages.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(238)))), ((int)(((byte)(134)))));
-            this.ButtonSubmit.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.ButtonSubmit.ForeColor = System.Drawing.Color.White;
-            this.ButtonSubmit.HoverState.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.Location = new System.Drawing.Point(47, 408);
-            this.ButtonSubmit.Name = "ButtonSubmit";
-            this.ButtonSubmit.ShadowDecoration.Parent = this.ButtonSubmit;
-            this.ButtonSubmit.Size = new System.Drawing.Size(90, 35);
-            this.ButtonSubmit.TabIndex = 64;
-            this.ButtonSubmit.Text = "Submit";
-            this.ButtonSubmit.Click += new System.EventHandler(this.ButtonSubmit_Click_1);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(70, 16);
+            this.label1.Location = new System.Drawing.Point(145, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(288, 32);
+            this.label1.Size = new System.Drawing.Size(283, 32);
             this.label1.TabIndex = 63;
-            this.label1.Text = "Modifer un fonctionnaire";
+            this.label1.Text = "Ajouter un fonctionnaire";
             // 
             // TextBoxLieuNaissance
             // 
@@ -322,7 +299,7 @@
             this.TextBoxLieuNaissance.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxLieuNaissance.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxLieuNaissance.HoverState.Parent = this.TextBoxLieuNaissance;
-            this.TextBoxLieuNaissance.Location = new System.Drawing.Point(303, 71);
+            this.TextBoxLieuNaissance.Location = new System.Drawing.Point(292, 71);
             this.TextBoxLieuNaissance.Name = "TextBoxLieuNaissance";
             this.TextBoxLieuNaissance.PasswordChar = '\0';
             this.TextBoxLieuNaissance.PlaceholderText = "Lieu de naissance";
@@ -346,7 +323,7 @@
             this.ComboBoxGrade.HoverState.Parent = this.ComboBoxGrade;
             this.ComboBoxGrade.ItemHeight = 30;
             this.ComboBoxGrade.ItemsAppearance.Parent = this.ComboBoxGrade;
-            this.ComboBoxGrade.Location = new System.Drawing.Point(303, 304);
+            this.ComboBoxGrade.Location = new System.Drawing.Point(292, 329);
             this.ComboBoxGrade.Name = "ComboBoxGrade";
             this.ComboBoxGrade.ShadowDecoration.Parent = this.ComboBoxGrade;
             this.ComboBoxGrade.Size = new System.Drawing.Size(200, 36);
@@ -367,7 +344,7 @@
             this.ComboBoxService.HoverState.Parent = this.ComboBoxService;
             this.ComboBoxService.ItemHeight = 30;
             this.ComboBoxService.ItemsAppearance.Parent = this.ComboBoxService;
-            this.ComboBoxService.Location = new System.Drawing.Point(303, 262);
+            this.ComboBoxService.Location = new System.Drawing.Point(292, 272);
             this.ComboBoxService.Name = "ComboBoxService";
             this.ComboBoxService.ShadowDecoration.Parent = this.ComboBoxService;
             this.ComboBoxService.Size = new System.Drawing.Size(200, 36);
@@ -389,11 +366,12 @@
             this.ComboBoxSituation.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ComboBoxSituation.ItemHeight = 30;
             this.ComboBoxSituation.Items.AddRange(new object[] {
-            "Marié",
-            "Célébataire",
-            "Divorcer"});
+            "MARIE ",
+            "NO MARIE",
+            "MTALA9E",
+            "Programer"});
             this.ComboBoxSituation.ItemsAppearance.Parent = this.ComboBoxSituation;
-            this.ComboBoxSituation.Location = new System.Drawing.Point(78, 262);
+            this.ComboBoxSituation.Location = new System.Drawing.Point(67, 272);
             this.ComboBoxSituation.Name = "ComboBoxSituation";
             this.ComboBoxSituation.ShadowDecoration.Parent = this.ComboBoxSituation;
             this.ComboBoxSituation.Size = new System.Drawing.Size(200, 36);
@@ -414,7 +392,7 @@
             this.TextBoxCIN.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TextBoxCIN.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.TextBoxCIN.HoverState.Parent = this.TextBoxCIN;
-            this.TextBoxCIN.Location = new System.Drawing.Point(78, 71);
+            this.TextBoxCIN.Location = new System.Drawing.Point(67, 71);
             this.TextBoxCIN.Name = "TextBoxCIN";
             this.TextBoxCIN.PasswordChar = '\0';
             this.TextBoxCIN.PlaceholderText = "CIN";
@@ -424,11 +402,143 @@
             this.TextBoxCIN.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.TextBoxCIN.TabIndex = 58;
             // 
-            // EditFonctionnaire
+            // guna2DragControl1
+            // 
+            this.guna2DragControl1.ContainerControl = this;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(64, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 15);
+            this.label4.TabIndex = 77;
+            this.label4.Text = "Situation";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(64, 53);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 15);
+            this.label5.TabIndex = 78;
+            this.label5.Text = "CIN";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(64, 109);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(34, 15);
+            this.label6.TabIndex = 79;
+            this.label6.Text = "Nom";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(64, 166);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 15);
+            this.label7.TabIndex = 80;
+            this.label7.Text = "Prenom";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(289, 53);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(99, 15);
+            this.label8.TabIndex = 81;
+            this.label8.Text = "Lieu de naissance";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(289, 254);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(45, 15);
+            this.label9.TabIndex = 82;
+            this.label9.Text = "Service";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(289, 368);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 15);
+            this.label10.TabIndex = 83;
+            this.label10.Text = "Adresse";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(289, 311);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(38, 15);
+            this.label11.TabIndex = 84;
+            this.label11.Text = "Grade";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(64, 311);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(36, 15);
+            this.label12.TabIndex = 85;
+            this.label12.Text = "Email";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(64, 368);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 15);
+            this.label13.TabIndex = 86;
+            this.label13.Text = "Telephone";
+            // 
+            // ButtonCancel
+            // 
+            this.ButtonCancel.BorderRadius = 5;
+            this.ButtonCancel.CheckedState.Parent = this.ButtonCancel;
+            this.ButtonCancel.CustomImages.Parent = this.ButtonCancel;
+            this.ButtonCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(166)))), ((int)(((byte)(157)))));
+            this.ButtonCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ButtonCancel.ForeColor = System.Drawing.Color.White;
+            this.ButtonCancel.HoverState.Parent = this.ButtonCancel;
+            this.ButtonCancel.Location = new System.Drawing.Point(67, 438);
+            this.ButtonCancel.Name = "ButtonCancel";
+            this.ButtonCancel.ShadowDecoration.Parent = this.ButtonCancel;
+            this.ButtonCancel.Size = new System.Drawing.Size(90, 35);
+            this.ButtonCancel.TabIndex = 87;
+            this.ButtonCancel.Text = "Cancel";
+            this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
+            // 
+            // AffichageFonctionnaire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 458);
+            this.ClientSize = new System.Drawing.Size(601, 485);
+            this.Controls.Add(this.ButtonCancel);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.TextBoxAdresse);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DateTimePickerRecruit);
@@ -440,8 +550,6 @@
             this.Controls.Add(this.TextBoxPrenom);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.DateTimePickerNaissance);
-            this.Controls.Add(this.ButtonCancel);
-            this.Controls.Add(this.ButtonSubmit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextBoxLieuNaissance);
             this.Controls.Add(this.ComboBoxGrade);
@@ -449,8 +557,9 @@
             this.Controls.Add(this.ComboBoxSituation);
             this.Controls.Add(this.TextBoxCIN);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "EditFonctionnaire";
-            this.Text = "EditFonctionnaire";
+            this.Name = "AffichageFonctionnaire";
+            this.Text = "AffichageFonctionnaire";
+            this.Load += new System.EventHandler(this.AffichageFonctionnaire_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,14 +578,23 @@
         private Guna.UI2.WinForms.Guna2TextBox TextBoxPrenom;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2DateTimePicker DateTimePickerNaissance;
-        private Guna.UI2.WinForms.Guna2Button ButtonCancel;
-        private Guna.UI2.WinForms.Guna2Button ButtonSubmit;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxLieuNaissance;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxGrade;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxService;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxSituation;
         private Guna.UI2.WinForms.Guna2TextBox TextBoxCIN;
-
+        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2Button ButtonCancel;
     }
 }

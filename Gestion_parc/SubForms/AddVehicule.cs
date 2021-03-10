@@ -25,7 +25,6 @@ namespace Gestion_parc.SubForms
         DataTable tableType = new DataTable();
         DataTable tableMarqe = new DataTable();
         DataTable tableSatut = new DataTable();
-
         public void RemplirCombo()
         {
             try
@@ -144,15 +143,19 @@ namespace Gestion_parc.SubForms
                     string Requtte = "insert into Vehicule values('" + TextBoxMatricule.Text + "'," + ComboBoxType.SelectedValue.ToString() + ",'" + DateAquisition.ToString("yyyy-MM-dd") + "'," + ComboBoxMarque.SelectedValue.ToString() + ",'" + TextBoxModele.Text + "'," + ComboBoxStatut.SelectedValue.ToString() + "," + TrackBarNivCarb.Value.ToString() + ", " + TextBoxKilometrage.Text + "," + TextBoxConsomage.Text + "," + TextBoxHorsePower.Text + "," + TextBoxCapacite.Text + ")";
                     cmd = new SqlCommand(Requtte, cnx);
                     cmd.ExecuteNonQuery();
+                    this.Close();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                MessageBox.Show(ex.Message);
             }
             finally
             {
                 cnx.Close();
+                this.Close();
+                FormVehicules FV = new FormVehicules();
+                FV.RemplirGrid();
             }
         }
 

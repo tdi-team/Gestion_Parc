@@ -134,6 +134,18 @@
     <Compile Include="SubForms\AddVehicule.Designer.cs">
       <DependentUpon>AddVehicule.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubForms\AffichageFonctionnaire.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\AffichageFonctionnaire.Designer.cs">
+      <DependentUpon>AffichageFonctionnaire.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubForms\AffichageVehicule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForms\AffichageVehicule.Designer.cs">
+      <DependentUpon>AffichageVehicule.cs</DependentUpon>
+    </Compile>
     <Compile Include="SubForms\EditFonctionnaire.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +202,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\AddVehicule.resx">
       <DependentUpon>AddVehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\AffichageFonctionnaire.resx">
+      <DependentUpon>AffichageFonctionnaire.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForms\AffichageVehicule.resx">
+      <DependentUpon>AffichageVehicule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SubForms\EditFonctionnaire.resx">
       <DependentUpon>EditFonctionnaire.cs</DependentUpon>

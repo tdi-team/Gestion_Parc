@@ -157,3 +157,5 @@ C:\Users\BENSGHIR\Documents\Project\Gestion_parc\Gestion_parc\obj\Debug\Gestion_
 C:\Users\BENSGHIR\Documents\Project\Gestion_parc\Gestion_parc\obj\Debug\Gestion_parc.SubForms.EditVehicule.resources
 C:\Users\BENSGHIR\Documents\Project\Gestion_parc\Gestion_parc\obj\Debug\Gestion_parc.csproj.GenerateResource.Cache
 =======
+C:\Users\BENSGHIR\Documents\Project\Gestion_Parc\Gestion_parc\obj\Debug\Gestion_parc.SubForms.AffichageVehicule.resources
+C:\Users\BENSGHIR\Documents\Project\Gestion_Parc\Gestion_parc\obj\Debug\Gestion_parc.SubForms.AffichageFonctionnaire.resources
